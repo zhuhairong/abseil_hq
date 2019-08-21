@@ -2,14 +2,14 @@
 #include <iostream>
 
 
-#include "log_severity.h"
+#include "absl/base/log_severity.h"
 void log_severity()
 {
 	std::cout << absl::LogSeverity::kError << "error!\n";
 	std::cout << (absl::LogSeverity)5 << "hello from base!\n";
 }
 
-#include "raw_logging.h"
+#include "absl/base/internal/raw_logging.h"
 void raw_logging()
 {
 	ABSL_RAW_LOG(ERROR, "print a:%d\n", 3);
