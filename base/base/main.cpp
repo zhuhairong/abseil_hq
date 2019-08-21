@@ -21,5 +21,9 @@ int main()
 {
 	log_severity();
 	raw_logging();
+
+
+
+
     return 0;
 }
