@@ -92,7 +92,7 @@ inline static bool VADoRawLog(char** buf, int* size,
   if (n < 0 || n > *size) {
     result = false;
     if (static_cast<size_t>(*size) > sizeof(kTruncated)) {
-      n = *size - sizeof(kTruncated);  // room for truncation message
+      n = *size - (int)sizeof(kTruncated);  // room for truncation message
     } else {
       n = 0;                           // no room for truncation message
     }
