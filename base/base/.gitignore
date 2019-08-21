@@ -1,0 +1,5 @@
+bin
+obj
+readme
+*.vcxproj
+*.vcxproj.user
